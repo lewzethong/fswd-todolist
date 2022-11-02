@@ -1,0 +1,24 @@
+<%= javascript_pack_tag 'index', 'data-turbolinks-track': 'reload' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>To Do List</h1>
+      <div class="todo-list-container">
+        <form id="create-task">
+          <input id="new-task" type="text" placeholder="new task to be done"/>
+          <button>Create</button>
+        </form>
+        <div class="filter-bar pb-2">
+          <div><span class="active-amount-left"></span> items left</div>
+          <div class="todo-filter" active>
+            <button class="toggle-all active">All</button>
+            <button class="toggle-active">Active</button>
+            <button class="toggle-completed">Completed</button>
+          </div>
+        </div>
+        <div id="todo-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
